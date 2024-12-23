@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 
 export default defineConfig({
-  base: '/toefl_timer/',
+  base: '/',
   server: {
     host: true,
     port: 3000

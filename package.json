@@ -1,0 +1,35 @@
+{
+  "name": "ladinachad",
+  "version": "1.0.0",
+  "description": "ladinachad pages",
+  "main": "src/App.tsx",
+  "repository": "git@github.com:ladianchad/ladianchad.github.io.git",
+  "author": "ladianchad <qhrejddlvltm@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://ladianchad.github.io/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "node profile.js && vite build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.7.2",
+    "wouter": "^3.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "fs": "^0.0.1-security",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.49",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss": "^3.4.16",
+    "ts-node": "^10.9.2",
+    "vite": "^6.0.3"
+  }
+}

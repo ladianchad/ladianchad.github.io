@@ -1,14 +1,16 @@
-import {Route, Router} from 'wouter';
-import Navigator from "./components/Navigator";
-import Home from "./pages/home/Home";
+import {useSearch} from "wouter";
+import {useMemo} from "react";
+import CVPage from "./pages/cv/page";
 
 const App = () => {
-    return <Router>
-        <Navigator/>
-        <Route path="/" component={Home}/>
-        <Route path="/cv" component={Home}/>
-        <Route path="/projects" component={Home}/>
-    </Router>
+    const search = useSearch()
+    const content = useMemo(() => {
+        return new URLSearchParams(search)
+    }, [search])
+    if (content.get("ct") == "cv") {
+        return <CVPage></CVPage>
+    }
+    return <>HI</>
 }
 
 export default App

@@ -32,7 +32,7 @@ const Content = ({
 }
 
 const CVPage = () => {
-    return <div className="flex flex-col gap-4 text-center pt-2 pb-20">
+    return <div className="flex flex-col gap-2 text-center pt-2">
         <h1 className="text-2xl font-bold flex flex-col pt-4font-serif">
             <span>Chan Hui Jung</span>
             <span className="text-xs">+82 1030008899</span>
@@ -51,20 +51,20 @@ const CVPage = () => {
             </Content>
         </Section>
         <Section title="Major Courses">
-            <div className="flex flex-wrap gap-3 py-2">
-                <span>Kinematics</span>,
-                <span>Statics</span>,
-                <span>Circuit Theory</span>,
-                <span>Circuit Laboratory</span>,
-                <span>Introduction to Robotics Design</span>,
-                <span>Data Structures and Algorithms</span>,
-                <span>Operating Systems</span>,
-                <span>Embedded Operating Systems</span>,
-                <span>Computer Architecture</span>,
-                <span>System Analysis</span>,
-                <span>Automatic Control</span>,
-                <span>Machine Learning</span>,
-                <span>Deep Learning</span>
+            <div className="flex flex-wrap py-2 text-sm">
+                <span className="px-1">Kinematics,</span>
+                <span className="px-1">Statics,</span>
+                <span className="px-1">Circuit Theory,</span>
+                <span className="px-1">Circuit Laboratory,</span>
+                <span className="px-1">Introduction to Robotics Design,</span>
+                <span className="px-1">Data Structures and Algorithms,</span>
+                <span className="px-1">Operating Systems,</span>
+                <span className="px-1">Embedded Operating Systems,</span>
+                <span className="px-1">Computer Architecture,</span>
+                <span className="px-1">System Analysis,</span>
+                <span className="px-1">Automatic Control,</span>
+                <span className="px-1">Machine Learning,</span>
+                <span className="px-1">Deep Learning</span>
             </div>
         </Section>
         <Section title="HONOR AND AWARDS">
@@ -147,6 +147,7 @@ const CVPage = () => {
                 </div>
             </Content>
         </Section>
+        <span className="h-6"></span>
         <Section title="TEACHING AND MENTORING EXPERIENCE">
             <Content date="2020 ~ 2022">
                 Mentor in the Departmental Academic Society of the Department of Robot Engineering at Hanyang
@@ -243,9 +244,7 @@ const CVPage = () => {
             </dl>
         </Section>
         <Section title="LANGUAGES">
-            <Content date="2025.01">
-                TOEFL : 90 , Best Score TOEFL : 103
-            </Content>
+            TOEFL : 90 , Best Score TOEFL : 103
         </Section>
     </div>
 }

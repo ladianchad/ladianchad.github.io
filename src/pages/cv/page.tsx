@@ -147,7 +147,7 @@ const CVPage = () => {
                 </div>
             </Content>
         </Section>
-        <span className="h-6"></span>
+        <span className="print:h-6 h-0"></span>
         <Section title="TEACHING AND MENTORING EXPERIENCE">
             <Content date="2020 ~ 2022">
                 Mentor in the Departmental Academic Society of the Department of Robot Engineering at Hanyang

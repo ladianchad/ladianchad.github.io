@@ -1,0 +1,23 @@
+\ProvidesPackage{CVSection}
+\usepackage{enumitem}
+\usepackage{titlesec}   
+
+\titleformat{\section}
+  {\color{section_color}\normalfont\Large\bfseries}
+  {}{0em}{}[\titlerule]
+
+\newcommand{\CVSectionHeader}[1]{
+  \section*{#1}
+}
+
+\newcommand{\CVSectionListBegin}{
+  \begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+}
+
+\newcommand{\CVSectionListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\CVSectionListItem}[1]{
+  \item #1
+}

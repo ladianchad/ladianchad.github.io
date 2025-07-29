@@ -1,0 +1,15 @@
+\ProvidesPackage{TitledList}
+\usepackage{CVSection} 
+
+\newcommand{\TitledListBegin}[1]{
+  #1
+  \CVSectionListBegin
+}
+
+\newcommand{\TitledListEnd}{
+  \CVSectionListEnd
+}
+
+\newcommand{\TitledListItem}[1]{
+  \CVSectionListItem{#1}
+}

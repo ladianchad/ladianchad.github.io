@@ -1,0 +1,16 @@
+\ProvidesPackage{Contents}
+\usepackage{xparse}
+
+\NewDocumentCommand{\TitleWithSide}{m m}{
+  #1 \hfill \small{#2}
+}
+
+\NewDocumentCommand{\TitleWithPeriod} {m m o} {
+  \TitleWithSide{#1}{\textbf{#2 \IfValueT{#3}{-- #3}}}
+}
+
+\newcommand{\Center}[1]{
+  \begin{center}
+    #1
+  \end{center}
+}

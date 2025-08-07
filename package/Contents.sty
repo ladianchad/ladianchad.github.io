@@ -1,5 +1,8 @@
 \ProvidesPackage{Contents}
 \usepackage{xparse}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
 
 \NewDocumentCommand{\TitleWithSide}{m m}{
   #1 \hfill \small{#2}
@@ -13,4 +16,14 @@
   \begin{center}
     #1
   \end{center}
+}
+
+\NewDocumentCommand{\LeftImage} {m m o o} {
+  \begin{minipage}{#2\textwidth}
+    \vspace{-10pt}
+    \includegraphics[width=\linewidth]{#1}
+    \IfValueT{#3}{\captionof{figure}*{#3}}
+    \IfValueT{#4}{\label{#4}}
+    \vspace{-10pt}
+  \end{minipage}
 }

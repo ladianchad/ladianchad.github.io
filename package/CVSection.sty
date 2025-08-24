@@ -1,6 +1,7 @@
 \ProvidesPackage{CVSection}
 \usepackage{enumitem}
 \usepackage{titlesec}   
+\usepackage{xparse}
 
 \titleformat{\section}
   {\color{section_color}\normalfont\Large\bfseries}
@@ -10,8 +11,15 @@
   \section*{#1}
 }
 
-\newcommand{\CVSectionListBegin}{
-  \begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+\NewDocumentCommand{\CVSectionListBegin}{O{8pt} O{2pt}}{
+  \begin{itemize}[
+    leftmargin=#1,
+    rightmargin=#1,
+    itemsep=#2,
+    topsep=0pt,
+    parsep=0pt,
+    partopsep=0pt               
+  ]
 }
 
 \newcommand{\CVSectionListEnd}{

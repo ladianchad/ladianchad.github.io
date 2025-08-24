@@ -3,13 +3,18 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{caption}
+\usepackage{calc}
 
-\NewDocumentCommand{\TitleWithSide}{m m}{
-  #1 \hfill \small{#2}
+\NewDocumentCommand{\TitleWithSide}{m m O{0.85}}{
+  \noindent
+  \parbox[t]{\linewidth}{
+    \parbox[t]{#3\linewidth}{#1} \hfill
+    \makebox[0pt][r]{\small{#2}}
+  }
 }
 
-\NewDocumentCommand{\TitleWithPeriod} {m m o} {
-  \TitleWithSide{#1}{\textbf{#2 \IfValueT{#3}{-- #3}}}
+\NewDocumentCommand{\TitleWithPeriod} {m m o O{0.85}} {
+  \TitleWithSide{#1}{\textbf{#2 \IfValueT{#3}{-- #3}}}[#4]
 }
 
 \newcommand{\Center}[1]{

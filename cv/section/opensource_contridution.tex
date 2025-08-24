@@ -1,18 +1,26 @@
-\CVSectionHeader{Opensource Contributions}
+\CVSectionHeader{Open Source Contributions}
 \TitledListBegin{\TitleWithPeriod{\textbf{ROS2 Navigation2 Contributions}}{2022}[2023]}
-  \TitledListItem{\href{https://github.com/ros-navigation/navigation2/pull/3927}{\TitleWithSide{
-   MPPI build bug fix
-  }{[\#3927]}}}
-  \TitledListItem{\href{https://github.com/ros-navigation/navigation2/pull/3141}{\TitleWithSide{
-    Change minor bug in launch utils
-  }{[\#3141]}}}
-  \TitledListItem{\href{https://github.com/ros-navigation/navigation2/pull/3068}{\TitleWithSide{
-    Navigator plugin architecture suggestions.
-  }{[\#3068]}}}
+  \TitledListItem{
+    \href{https://github.com/ros-navigation/navigation2/pull/3068}{
+      \TitleWithSide{Refactored the Behavior Tree–based Navigator into a plugin-oriented architecture, improving modularity, scalability, and extensibility of the navigation stack.}{[\#3068]}
+    }
+  }
+  \TitledListItem{
+    \href{https://github.com/ros-navigation/navigation2/pull/3927}{
+      \TitleWithSide{Resolved build errors in the MPPI (Model Predictive Path Integral) controller, ensuring stable integration across environments.}{[\#3927]}
+    }
+  }
+  \TitledListItem{
+    \href{https://github.com/ros-navigation/navigation2/pull/3141}{
+      \TitleWithSide{Improved configuration handling in Navigation2 launch utilities by fixing delimiter application in the pathify function, increasing maintainability and consistency.}{[\#3141]}
+    }
+  }
 \TitledListEnd
 \vspace{1em}
-\TitledListBegin{\TitleWithPeriod{\textbf{ROS2 Contributions}}{2022}}
-  \TitledListItem{\href{https://github.com/ros2/rcl/pull/1003}{\TitleWithSide{
-    RCL timer bug fix
-  }{[\#1003]}}}
+\TitledListBegin{\TitleWithPeriod{\textbf{ROS2 Core Contributions (rcl)}}{2022}}
+  \TitledListItem{
+    \href{https://github.com/ros2/rcl/pull/1003}{
+      \TitleWithSide{Corrected rcl\_wait() return values when timers were canceled, ensuring reliable event-driven execution in the ROS 2 core library.}{[\#1003]}
+    }
+  }
 \TitledListEnd

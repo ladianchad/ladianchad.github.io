@@ -1,63 +1,55 @@
 \CVSectionHeader{Projects}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{Floady : automative mobile robot on warehouses}, Floatic Co. South Korea ~~ \href{https://www.youtube.com/watch?v=0acR1xwGQf8}{\textcolor{red}{\faYoutube} youtube}}{2022}[2024]
+  \TitleWithPeriod{\textbf{Floady : Autonomous Mobile Robot for Warehouses  - Floatic Co. South Korea} ~~ \href{https://www.youtube.com/watch?v=0acR1xwGQf8}{\textcolor{red}{\faYoutube} youtube}}{2022}[2024]
 }
-  \TitledListItem{Developed and ported ROS2-compatible sensor drivers—including IMU, motor drivers, and LiDAR—and maintained them to ensure system robustness and stability}
-  \TitledListItem{Built and operated a private APT package repository on an internal NAS to streamline deployment across robotic systems}
-  \TitledListItem{Implemented a CI/CD pipeline tailored for robotic software integration, testing, and automated deployment}
-  \TitledListItem{Integrated AWS RoboMaker with NVIDIA Isaac Sim to enable cloud-based robotic simulation and validation}
-  \TitledListItem{Developed a multi-robot coordination and navigation system based on the ROS2 Navigation2 stack and behavior tree architecture, contributing to upstream open-source projects}
-  \TitledListItem{Configured autonomous navigation parameters—including path planning, localization, and recovery behaviors—for deployment in large-scale warehouse environments}
-  \TitledListItem{Designed and implemented middleware frameworks supporting various communication protocols (e.g., Kafka, MQTT) to interface robots with the company’s backend systems}
-  \TitledListItem{Automated the robot installation and configuration pipeline for efficient mass production and field deployment}
+  \TitledListItem{Served as a core robotics engineer from the company’s initial phase, building successive production-grade robotics stacks for warehouse robots.}
+  \TitledListItem{Custom-designed global planners, local controllers, and behavior trees in ROS2 Navigation2, with several improvements later integrated into the open-source project.}
+  \TitledListItem{Developed full system integration, including sensor drivers (IMU, LiDAR, motor), Kafka/MQTT middleware for backend communication, and a Redis-based fleet supervision layer for robot-to-robot coordination. Explored large-scale simulation with Isaac Sim and AWS RoboMaker.}
+  \TitledListItem{Deployed 10 robots simultaneously in a live warehouse, accumulating 100+ operating hours with ~90\% autonomous navigation success in dynamic human–robot conditions (planners at 10 Hz, controllers at 20 Hz, CPU 30-40\%).}
+  \TitledListItem{Implemented an operator-friendly rollback routine for failed navigation recovery, raising the overall task success rate to >95\% and demonstrating a real-world testbed for scalable fleet supervision and decentralized decision-making.}
 \TitledListEnd
 \vspace{1em}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{Automotive marine rescue robot}, Capston Design, Hanyang University ERICA}{2020}[2022]
+  \TitleWithPeriod{\textbf{Automotive marine rescue robot Capston Design - Hanyang University ERICA}}{2020}[2022]
 }
-  \TitledListItem{Developed an autonomous marine rescue robot using ROS and YOLOv5-based computer vision for human detection in open-water scenarios}
-  \TitledListItem{Integrated IMU and thermal imaging sensors with GPS and Kalman filter algorithms to estimate and track drowning individuals}
-  \TitledListItem{Designed a finite state machine (FSM) to activate autonomous behavior upon detecting water impact or excessive tilt using IMU data}
-  \TitledListItem{Implemented thruster control using BLDC motors for stable maneuvering in aquatic environments}
-  \TitledListItem{Engineered waterproof mechanical design using 3D printing, ethanol smoothing, and epoxy putty finishing techniques}
+  \TitledListItem{Co-developed a surface rescue robot, splitting computation between Jetson Nano (YOLOv5-based detection, 3–7 Hz) and Raspberry Pi (state estimation, control) for efficiency and cost-effectiveness.}
+  \TitledListItem{Implemented Kalman and low-pass filtering for IMU/GPS fusion, enabling reliable estimation of pose and velocity under dynamic water conditions.}
+  \TitledListItem{Achieved consistent performance in controlled pool environments (6–8 m detection range), while real-sea deployment highlighted the challenges of perception and robustness under tight budget and hardware constraints.}
+  \TitledListItem{Experience revealed the difficulty of bringing academic methods to field-scale systems, motivating further research into robust perception and control under uncertainty.}
 \TitledListEnd
 \vspace{1em}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{2020 Item Assembly AI Robot Challenge}  ~~ \href{https://www.youtube.com/watch?v=CTon4sS2iFs}{\textcolor{red}{\faYoutube} youtube} ~~ \href{https://www.newshyu.com/news/articleView.html?idxno=1001038}{\textcolor{gray}{\faGlobe} article}}{2020}[2021] \\ Ministry of Science and Technology Information and Communication, Ministry of Trade, Industry and Energy Korea
+  \TitleWithPeriod{\textbf{LattePanda - Donation \& Recycling Robot, Hanyang University ERICA}  ~~ \href{https://www.youtube.com/watch?v=2ig5qAAA0DM&t=62s}{\textcolor{red}{\faYoutube} youtube}}{2020}
 }
-\TitledListItem{Collaborated with another Hanyang University robotics lab on a national R\&D project to develop autonomous furniture assembly robots.}
-  \TitledListItem{Developed a vision-based localization system using Basler GigE industrial cameras and OpenCV, achieving sub‑millimeter precision (≤ 25.0 mm) in identifying part positions and nail insertion points.}
-  \TitledListItem{Designed robust triangulation-based detection algorithms and validated multiple sensing pipelines using depth and area scan cameras.}
-  \TitledListItem{Led the implementation of visual pipelines for furniture recognition and high-precision object tracking in constrained assembly environments.}
+  \TitledListItem{Led system design of a mobile service robot that encouraged recycling and donations in public open spaces, combining navigation, perception, and human–robot interaction.}
+  \TitledListItem{Implemented YOLOv4-based perception with SORT tracking to detect individuals carrying disposable cups and identify their engagement with the robot.}
+  \TitledListItem{Developed lightweight obstacle avoidance by segmenting RealSense depth images and applying weighted heuristics for direction control.}
+  \TitledListItem{Built ROS pipeline, motor control via PID, and PyQt/OpenCV UI that delivered engaging environmental animations and panda-robot gestures.}
+  \TitledListItem{Project received strong recognition from faculty for its novel integration of perception, interaction, and social engagement.}
 \TitledListEnd
 \vspace{1em}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{LattePanda : Donation robot}, Intelligent Robot Crash Lab lecture, Hanyang University ERICA ~~ \href{https://www.youtube.com/watch?v=2ig5qAAA0DM&t=62s}{\textcolor{red}{\faYoutube} youtube}}{2020}
+  \TitleWithPeriod{\textbf{Item Assembly AI Robot Challenge - Ministry of Science and ICT, Korea}  ~~ \href{https://www.youtube.com/watch?v=CTon4sS2iFs}{\textcolor{red}{\faYoutube} youtube} ~~ \href{https://www.newshyu.com/news/articleView.html?idxno=1001038}{\textcolor{gray}{\faGlobe} article}}{2020}[2021]
 }
-  \TitledListItem{Designed and developed a mobile donation robot using ROS, incorporating autonomous navigation and obstacle avoidance based on depth cameras}
-  \TitledListItem{Implemented low-level control systems, including circuit design, motor control, and PID tuning for smooth maneuverability}
-  \TitledListItem{Utilized YOLO-based object detection to identify waste held by users and assist in automatic garbage classification}
-  \TitledListItem{Integrated expressive joint movement and interactive behaviors to enhance human-robot interaction (HRI)}
+  \TitledListItem{Implemented the vision-based localization module for a furniture-assembly robotic arm in a national challenge jointly conducted by multiple university labs.}
+  \TitledListItem{Transitioned from an initial RealSense depth-based approach to a custom pipeline with Basler GigE, OpenCV, triangulation, and camera calibration, gaining practical experience in robotic perception and optics.}
+  \TitledListItem{Achieved real-time inference with localization accuracy within 20 mm, demonstrating applied vision research in constrained task environments.}
 \TitledListEnd
 \vspace{1em}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{Churo 2 : Outsourcing of Dog Care Robot Development}, ROBOI Co. South Korea ~~ \href{http://www.roboicorp.com/sub/develop/churo2.php}{\textcolor{gray}{\faGlobe} site}}{2020}
+  \TitleWithPeriod{\textbf{Churo 2 - Outsourcing of Dog Care Robot, ROBOI Co. Korea},  ~~ \href{http://www.roboicorp.com/sub/develop/churo2.php}{\textcolor{gray}{\faGlobe} site}}{2020}
 }
-  \TitledListItem{Developed an AI-based behavior recognition system for identifying dog activities (e.g., running, sleeping, walking) using YOLOv5-based visual detection and a fine-tuned LLM trained on extracted behavioral patterns}
-  \TitledListItem{Implemented a real-time localization algorithm leveraging onboard camera streams to estimate the pet's position within indoor environments}
-  \TitledListItem{Designed and deployed an edge-aware image streaming system integrated with a cloud-based inspection pipeline on AWS, optimizing for minimal on-device computation}
+  \TitledListItem{Built a behavior recognition and indoor localization pipeline for a dog care robot, integrating YOLOv5, fine-tuned language models, and AWS-based edge streaming.}
 \TitledListEnd
 \vspace{1em}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{Analogue circuit Lanchpad}, Intelligent Robot Crash Lab lecture, Hanyang University ERICA ~~ \href{https://www.youtube.com/watch?v=PxF3JUQmUiY}{\textcolor{red}{\faYoutube} youtube}}{2020}
+  \TitleWithPeriod{\textbf{Film Defect Inspection Software development, UNIEYE Co. Korea} ~~ \href{http://www.unieye.co.kr/kr/product/product_view.php?idx=2}{\textcolor{gray}{\faGlobe} site}}{2019}
 }
-  \TitledListItem{Designed and built an analog launchpad circuit using D flip-flops and oscillators to generate musical patterns based on bit sequences}
-  \TitledListItem{Implemented pattern recording and playback functionalities through custom logic circuit design and hardware-level control}
+  \TitledListItem{Developed a film defect inspection system on Linux using C++, OpenCV, and Qt5, modernizing a legacy pipeline with custom UI, defect detection, and camera calibration}
 \TitledListEnd
 \vspace{1em}
 \TitledListBegin{
-  \TitleWithPeriod{\textbf{Film Defect Inspection Software development}, UNIEYE Co. South Korea ~~ \href{http://www.unieye.co.kr/kr/product/product_view.php?idx=2}{\textcolor{gray}{\faGlobe} site}}{2020}
+  \TitleWithPeriod{\textbf{Analogue circuit Lanchpad, Hanyang University ERICA}  ~~ \href{https://www.youtube.com/watch?v=PxF3JUQmUiY}{\textcolor{red}{\faYoutube} youtube}}{2019}
 }
-  \TitledListItem{Reimplemented a legacy fault detection system for donation counters in a Linux-based environment as part of an industry-collaboration project}
-  \TitledListItem{Developed a full-featured application using Basler industrial cameras, OpenCV, and Qt5 to perform pattern recognition, defect detection, and camera calibration}
+  \TitledListItem{Built an analog launchpad circuit using flip-flops and oscillators, gaining practical experience in circuit design and hardware-level control relevant to robotics systems.}
 \TitledListEnd

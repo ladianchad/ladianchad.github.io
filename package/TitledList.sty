@@ -1,9 +1,12 @@
 \ProvidesPackage{TitledList}
 \usepackage{CVSection} 
 
-\newcommand{\TitledListBegin}[1]{
-  #1
-  \CVSectionListBegin
+\NewDocumentCommand{\TitledListBegin}{m O{8pt} O{2pt}}{
+  \noindent
+  \parbox[t]{\linewidth}{
+    #1
+  }
+  \CVSectionListBegin[#2][#3]
 }
 
 \newcommand{\TitledListEnd}{

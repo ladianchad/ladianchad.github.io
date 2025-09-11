@@ -2,16 +2,22 @@
 \usepackage{enumitem}
 \usepackage{titlesec}   
 \usepackage{xparse}
+\usepackage{xcolor}
 
 \titleformat{\section}
   {\color{section_color}\normalfont\Large\bfseries}
   {}{0em}{}[\titlerule]
 
 \newcommand{\CVSectionHeader}[1]{
-  \section*{#1}
+  \par\vspace{0.6\baselineskip}
+  \noindent
+  {\bfseries\color{blue!60!black} \Large{#1}}%
+  \hspace{0.5em}
+  {\color{black!50}\leaders\hrule height .6pt\hfill\kern0pt}%
+  \par\vspace{0.4\baselineskip}
 }
 
-\NewDocumentCommand{\CVSectionListBegin}{O{8pt} O{2pt}}{
+\NewDocumentCommand{\CVSectionListBegin}{O{12pt} O{2pt}}{
   \begin{itemize}[
     leftmargin=#1,
     rightmargin=#1,

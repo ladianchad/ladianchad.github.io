@@ -1,11 +1,11 @@
 \ProvidesPackage{TitledList}
 \usepackage{CVSection} 
 
-\NewDocumentCommand{\TitledListBegin}{m O{8pt} O{2pt}}{
+\NewDocumentCommand{\TitledListBegin}{m O{12pt} O{2pt}}{%
+  \par\noindent
+  {\setlength{\parskip}{0pt}
+   \parbox[t]{\linewidth}{#1}}%
   \noindent
-  \parbox[t]{\linewidth}{
-    #1
-  }
   \CVSectionListBegin[#2][#3]
 }
 

@@ -3,18 +3,31 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{caption}
-\usepackage{calc}
 
-\NewDocumentCommand{\TitleWithSide}{m m O{0.85}}{
+\NewDocumentCommand{\TitleWithSide}{m m O{0.765}}{
+  \SplittedText{#1}{\raggedleft\small{#2}}[#3]
+}
+
+\NewDocumentCommand{\SplittedText}{m m O{0.5}}{
   \noindent
   \parbox[t]{\linewidth}{
-    \parbox[t]{#3\linewidth}{#1} \hfill
-    \makebox[0pt][r]{\small{#2}}
+    \setlength{\parskip}{0pt}
+    {\setlength{\parskip}{0pt}
+    \parbox[t]{#3\linewidth}{#1}}
+    {\setlength{\parskip}{0pt}
+    \parbox[t]{\dimexpr\linewidth-#3\linewidth\relax}{#2}}
   }
 }
 
-\NewDocumentCommand{\TitleWithPeriod} {m m o O{0.85}} {
+\NewDocumentCommand{\TitleWithPeriod} {m m o O{0.75}} {
   \TitleWithSide{#1}{\textbf{#2 \IfValueT{#3}{-- #3}}}[#4]
+}
+
+\NewDocumentCommand{\TitleWithPeriodAndSub} {m m m o O{0.75}} {
+  \TitleWithSide{#1}{
+    \textbf{#3 \IfValueT{#4}{-- #4}} \\[0.2em]
+    \small{#2}
+  }
 }
 
 \newcommand{\Center}[1]{

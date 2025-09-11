@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=0.9in]{geometry}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}
+
+\definecolor{sectiongray}{RGB}{60,60,60}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\textcolor{gray}{ChanHui Jung}}
+
+% 줄간격·문단
+\setstretch{1.15}           % 1.25 -> 1.15
+\setlength{\parskip}{0.0em} 
+\setlength{\parindent}{1.5em}% 문단 첫줄 들여쓰기로 블록 간격 대신 밀도 ↑
+
+% 살짝 더 자연스러운 줄바꿈
+\emergencystretch=1.5em
+
+\newcommand\firstName{ChanHui}
+\newcommand\lastName{Jung}
+\newcommand\fullName{\firstName~\lastName}
+
+\begin{document}
+
+\begin{center}
+  {\large\bfseries Statement of Purpose}\\[-0.2em]
+  {\normalsize \textcolor{sectiongray}{\fullName}}
+\end{center}
+
+How can fleets of robots navigate efficiently in crowded, dynamic environments?
+This curiosity has guided my academic and professional journey in robotics.
+My passion for robotics, which began in middle school, was strengthened and refined during my undergraduate years.
+In my second year, I joined the AIRO Lab, where I acquired foundational research experience in electronics, perception, motor control, and system integration.
+
+As I began to consider which area of robotics to specialize in, I joined Floatic, a robotics startup, to clarify my research direction while applying theoretical concepts to real-world applications.
+I developed multi-robot navigation and fleet management systems, addressing challenges such as congestion and flow control, and I also contributed to the ROS2 and Nav2 communities, which consolidated my understanding of advanced navigation frameworks.
+These experiences motivated me to pursue research in multi-agent pathfinding (MAPF) and in optimizing robot fleet management (RMF) for complex, dynamic environments.
+
+\vspace{0.8em}
+\end{document}
+
+
+
+
+
+
+
+
+

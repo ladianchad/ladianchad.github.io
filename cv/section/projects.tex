@@ -1,20 +1,66 @@
 \CVSectionHeader{Projects}
-\TitledListBegin{
-  \TitleWithPeriod{\textbf{Automotive Marine Rescue Robot, Capstone Design, Hanyang Univ. ERICA}}{2020}[2022]
-}
-  \TitledListItem{Implemented PID-based motion control in marine environments, using IMU/GPS sensor fusion with a Kalman Filter.}
-  \TitledListItem{Defined robot's states and build FSM for robot management.}
-\TitledListEnd
+\TitleWithPeriodAndSub{
+  \textbf{Omni Farmer}\\[0.1em]
+  \small\textit{Agricultural Robot for harvesting, sorting, and smart farm automation.}
+}{Metafarmers Co., South Korea}{2025}[Present]
+\CVSectionListBegin
+  \CVSectionListItem{\textasciitilde\$2.3M USD venture-funded project deploying fleets of robots in a 1.65-hectare (~16,500 m$^2$) smart farm.}
+  \CVSectionListItem{Designing the foundation of multi-robot management systems for future large-scale deployment.}
+  \CVSectionListItem{Implementing robot navigation systems capable of operating in narrow and highly constrained environments.}
+  \CVSectionListItem{Developing integrated systems in navigation, manipulation, perception, and fleet management for large-scale farm automation.}
+  \CVSectionListItem{Targeting 90\%+ automated harvesting and pollination success while enabling yield prediction and region-based harvesting recommendations.}
+  \CVSectionListItem{Establishing internal strategies for software deployment and maintenance across multi-robot systems.}
+\CVSectionListEnd
+
 \vspace{1em}
-\TitledListBegin{
-  \TitleWithPeriod{\textbf{LattePanda: Donation \& Recycling Robot, Hanyang Univ. ERICA} ~~ \href{https://youtu.be/2ig5qAAA0DM?si=t-7a4tkHK3kIh-8D&t=110}{\textcolor{red}{\faYoutube} youtube}}{2020}
-}
-  \TitledListItem{Implemented PID-based motor control and developed a section-weighted navigation strategy for obstacle avoidance.}
-  \TitledListItem{Led the design of interaction workflows, integrating human–robot interaction features.}
-\TitledListEnd
+\TitleWithPeriodAndSub{
+  \textbf{Floady} ~~ \href{https://www.youtube.com/watch?v=0acR1xwGQf8}{\textcolor{red}{\faYoutube} youtube}\\[0.1em]
+  \small\textit{Autonomous Mobile Robot for Warehouses, assisting workers and improving productivity.}
+}{Floatic Co. South Korea}{2022}[2024]
+\CVSectionListBegin
+  \CVSectionListItem{\textasciitilde \$8M USD venture-funded project on autonomous warehouse robots.}
+  \CVSectionListItem{Deployed 10+ robots in a live warehouse (300+ hours), achieving ~90\% navigation success and >95\% task completion.}
+  \CVSectionListItem{Developed decentralized and prioritized topology-graph-based multi-agent navigation system, reducing congestion at intersections and aisles.}
+  \CVSectionListItem{Built full-stack robotic software architecture, from low-level sensor drivers (IMU, LiDAR, motor) to high-level behavior controllers.}
+  \CVSectionListItem{Developed fleet supervision layer for task allocation, monitoring, and coordination, laying the foundation (Kafka/MQTT) for multi-robot management.}
+  \CVSectionListItem{Established internal DevOps pipelines (APT repositories, CI/CD).}
+\CVSectionListEnd
+
 \vspace{1em}
-\TitledListBegin{
-  \TitleWithPeriod{\textbf{Churo 2 – Dog Care Robot, ROBOI Co. Korea} ~~ \href{http://www.roboicorp.com/sub/develop/churo2.php}{\textcolor{gray}{\faGlobe} site}}{2020}
-}
-  \TitledListItem{Implemented behavior recognition for a dog-care robot using YOLOv5 and AWS-based edge streaming.}
-\TitledListEnd
+\TitleWithPeriodAndSub{
+  \textbf{Capstone Design} ~~ \href{https://www.youtube.com/watch?v=0acR1xwGQf8}{\textcolor{red}{\faYoutube} youtube}\\[0.1em]
+  \small\textit{Automotive marine rescue robot}
+}{Hanyang University ERICA}{2020}[2022]
+\CVSectionListBegin
+  \CVSectionListItem{Capstone project with a budget of \textasciitilde \$12K USD, funded through competition awards and external support.}
+  \CVSectionListItem{Achieved 80\% success rate in controlled pool environments, with 6–8 m drowning-person detection and real-time notification via web-based map API.}
+  \CVSectionListItem{Designed PID-based navigation, controlling heading angle and distance gains to approach detected persons safely.}
+  \CVSectionListItem{Implemented Kalman and low-pass filtering for IMU/GPS fusion, estimating robot pose and heading direction under dynamic water conditions.}
+  \CVSectionListItem{Achieved efficient onboard processing by splitting computation between Jetson Nano (YOLOv5-based detection, 3–7 Hz) and Raspberry Pi (state estimation and control).}
+\CVSectionListEnd
+
+\vspace{1em}
+\TitleWithPeriodAndSub{
+  \textbf{LattePanda} ~~ \href{https://www.youtube.com/watch?v=2ig5qAAA0DM&t=62s}{\textcolor{red}{\faYoutube} youtube}\\[0.1em]
+  \small\textit{Donation \& Recycling Robot}
+}{Hanyang University ERICA}{2020}
+\CVSectionListBegin
+  \CVSectionListItem{Course-funded project (~\$0.8K USD per 4~6 member team) to design a mobile service robot encouraging recycling and donations in public spaces.}
+  \CVSectionListItem{Led system design of a mobile service robot that encouraged recycling and donations in public open spaces, combining navigation, perception, and human–robot interaction.}
+  \CVSectionListItem{Developed lightweight obstacle-avoidance navigation by segmenting RealSense depth images and applying weighted heuristics, validated in 1+ hours of operation without collisions in public, unmapped environments.}
+  \CVSectionListItem{Implemented YOLOv4-based perception with SORT tracking, detecting individuals carrying disposable cups with >90\% accuracy.}
+  \CVSectionListItem{Built ROS pipeline, motor control via PID, and PyQt/OpenCV UI that delivered engaging environmental animations and panda-robot gestures.}
+\CVSectionListEnd
+
+\vspace{1em}
+\TitleWithPeriodAndSub{
+  \textbf{Churo} ~~ \href{http://www.roboicorp.com/sub/develop/churo2.php}{\textcolor{gray}{\faGlobe} site}\\[0.1em]
+  \small\textit{Dog-care robot, detecting dogs and recognizing behavioral patterns.}
+}{ROBOI Co., South Korea}{2020}
+\CVSectionListBegin
+  \CVSectionListItem{\$25K independent contract project developing a dog-care robot.}
+  \CVSectionListItem{Implemented YOLOv5-based dog detection with $\sim$95\% accuracy.}
+  \CVSectionListItem{Trained an LSTM model for behavior pattern recognition, achieving $\sim$75\% classification accuracy.}
+  \CVSectionListItem{Designed TCP-based image streaming between edge device and AWS server, achieving $\sim$0.3s latency with inference performed in the cloud.}
+\CVSectionListEnd
+

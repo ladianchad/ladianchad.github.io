@@ -25,9 +25,15 @@
 
 \NewDocumentCommand{\TitleWithPeriodAndSub} {m m m o O{0.75}} {
   \TitleWithSide{#1}{
-    \textbf{#3 \IfValueT{#4}{-- #4}} \\[0.2em]
+    \textbf{#3 \IfValueT{#4}{
+      \if\relax\detokenize{#4}\relax
+        % 빈 값 → 아무 것도 출력하지 않음
+      \else
+        \space--~#4% 실제 값 있을 때만 출력
+      \fi
+    }} \\[0.2em]
     \small{#2}
-  }
+  }[#5]
 }
 
 \newcommand{\Center}[1]{
